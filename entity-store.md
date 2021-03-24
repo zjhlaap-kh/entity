@@ -97,6 +97,14 @@ Query: {
     tagsQuery?: 通过tags去搜索，语法 tags like "%,amit,%" and tags like "%,home,%",tags的值需要是`,{value},`
     inheritedSearch?: 默认值：true。 如果为false，则将仅在搜索结果中返回用户具有读取权限的子实体。 设置为true时，用户只需要在fpath参数所引用的文件夹上具有读取权限即可
 }
+query参数需要用转义
+其他的参数可以直接拼接到网址后面
+tagsQuery参数为空的时候不要传，不然会报错
+import { stringifyUrl } from 'query-string';
+stringifyUrl({
+    url: 'domain',
+    query: '查询条件'
+});
 ```
 
 ### 通过文件夹名获取文件夹相关信息
