@@ -29,6 +29,8 @@
 - [修改文件](#修改文件)
 - [查找文件](#查找文件)
 
+### [API返回错误](https://coherenthk.atlassian.net/wiki/spaces/CCT/pages/707166265/API+Error+Codes)
+
 ## 文件夹的相关操作
 
 | 变量 | 含义 |
